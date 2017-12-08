@@ -27,22 +27,6 @@ void draw_triangle() {
   triangle(mouseX, mouseY+9, mouseX, mouseY-9, mouseX+40, mouseY);
 }
 
-void draw_rect() {
-
-  stroke(96, 96, 96);
-  fill(228, 228, 228);
-  ellipse(400, 600, 800, 350);
-  
-}
-
-
-void ellipse_draw() {
-
-  fill(255);
-  ellipse(650, 550, 80, 80);
-}
-
-
 
 
 void looping() {

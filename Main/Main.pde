@@ -1,6 +1,6 @@
 
 Space_field s;
-
+Cabin  c;
 
 void setup() {
 
@@ -9,6 +9,7 @@ void setup() {
   stroke(255);
   noCursor();
   s = new Space_field();
+  c = new Cabin();
 }
 
 
@@ -16,7 +17,7 @@ void draw () {
   background (0);
 
   s.draw_triangle();
-  s.draw_rect();
-  s.ellipse_draw();
   s.looping();
+  c.draw_cabin();
+  c.ellipse_draw();
 }
