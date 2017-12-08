@@ -30,9 +30,9 @@ void draw_triangle() {
 void draw_rect() {
 
   stroke(96, 96, 96);
-  fill(192, 192, 192);
-  rect(0, 500, 800, 100);
-  rect(0, 0, 130, 600);
+  fill(228, 228, 228);
+  ellipse(400, 600, 800, 350);
+  
 }
 
 
