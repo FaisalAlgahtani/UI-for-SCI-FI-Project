@@ -19,7 +19,7 @@ void draw () {
   
      background (0);
 
-     s.draw_triangle();
+     
      s.looping();
      c.draw_cabin();
      radar.display_Radar();

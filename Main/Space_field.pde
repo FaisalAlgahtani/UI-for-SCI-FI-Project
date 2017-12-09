@@ -19,15 +19,6 @@ class Space_field {
 
 
 
-void draw_triangle() {
-
-
-  stroke(127, 255, 0);
-  noFill();
-  triangle(mouseX, mouseY+9, mouseX, mouseY-9, mouseX+40, mouseY);
-}
-
-
 
 void looping() {
 
