@@ -18,8 +18,13 @@ void setup() {
 void draw () {
   
      background (0);
+    noFill();
+    stroke(255);
+    ellipseMode(CENTER);
+    ellipse(mouseX, mouseY, 50, 50); 
+   
 
-     
+  
      s.looping();
      c.draw_cabin();
      radar.display_Radar();

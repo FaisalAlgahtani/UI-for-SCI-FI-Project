@@ -17,9 +17,6 @@ class Space_field {
 }
 
 
-
-
-
 void looping() {
 
   int i = 0;
