@@ -1,7 +1,12 @@
+import processing.sound.*;
+
+
 
 Space_field s;
 Cabin  c;
 Radar radar;
+
+
 
 void setup() {
 
@@ -14,7 +19,6 @@ void setup() {
     c = new Cabin();
     radar = new Radar(width/2, height/1.16, 75, 0.5 , 200);
 }
-
 void draw () {
   
     background (0);
@@ -30,4 +34,7 @@ void draw () {
      c.draw_cabin();
      radar.display_Radar();
      radar.movement();
+     
+    
+     
 }
