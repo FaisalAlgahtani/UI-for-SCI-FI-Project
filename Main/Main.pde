@@ -17,12 +17,13 @@ void setup() {
 
 void draw () {
   
-     background (0);
+    background (0);
     noFill();
-    stroke(255);
+    stroke(17,255, 41);
     ellipseMode(CENTER);
     ellipse(mouseX, mouseY, 50, 50); 
-   
+    ellipse(mouseX, mouseY, 15, 15);
+    ellipse(mouseX, mouseY, 5, 5);
 
   
      s.looping();
