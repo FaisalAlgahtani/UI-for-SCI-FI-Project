@@ -21,7 +21,7 @@ void setup() {
   s = new Space_field();
   c = new Cabin();
   radar = new Radar(width/2, height/1.16, 75, 0.5, 200);
-  alarm = new Alarm(width/1.3, height/1.2, 75, 0.5, 200);
+  alarm = new Alarm(width/1.55, height/1.25, 75, 0.5, 200);
 
   player = minim.loadFile("outer-space-air.wav");
   alarmSound = minim.loadFile("alarm.mp3");
