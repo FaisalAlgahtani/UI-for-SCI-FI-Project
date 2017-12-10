@@ -8,6 +8,7 @@ Minim minim;
 AudioPlayer player;
 AudioPlayer alarmSound;
 Alarm alarm;
+Clock clock;
 
 
 void setup() {
@@ -22,9 +23,14 @@ void setup() {
   c = new Cabin();
   radar = new Radar(width/2, height/1.16, 75, 0.5, 200);
   alarm = new Alarm(width/1.53, height/1.25, 75, 0.5, 200);
-
+  clock = new Clock();
   player = minim.loadFile("outer-space-air.wav");
   alarmSound = minim.loadFile("alarm.mp3");
+  
+  
+   
+  
+  
 }
 void draw () {
 
@@ -44,8 +50,13 @@ void draw () {
   radar.movement();
   //alarm.botton();
   //alarm.mousePressed();
-  alarm.movement1();
-  alarm.display_Alarm();
+  
+   alarm.movement1();
+    alarm.display_Alarm();
+  clock.draw_clock();
+  clock.time();
+ 
+ 
   player.play();
   //player.rewind();
 

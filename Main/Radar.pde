@@ -30,7 +30,7 @@ class Radar
     stroke(0, 255, 0, Color);
     fill(0);
     ellipse(position_x, position_y, radius*1.9, radius*1.9);
-    float radar_rotation = 255/5;
+    float radar_rotation = 255/4;
     float line_brightness = 300;
     strokeWeight(1);
     

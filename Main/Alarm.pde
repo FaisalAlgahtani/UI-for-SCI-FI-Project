@@ -1,5 +1,6 @@
 class Alarm {
 
+
   float position_x;
   float position_y;
   float radius;
@@ -15,7 +16,7 @@ class Alarm {
     this.radius = radius;
     this.angle = 0;
     this.frequency = frequency;
-    this.speeding = (TWO_PI/25.0) * frequency;
+    this.speeding = (TWO_PI/20.0) * frequency;
     this.Color = Color;
   }
 
@@ -31,9 +32,14 @@ class Alarm {
     fill(255,0,0);
     ellipse(position_x, position_y, radius*0.8, radius*0.8);
     
+      fill(255);
+      text("ALARM", 565, 516);
+      noFill();
+      rect(560, 500, 50, 30);
+    
 if (mousePressed == true) {
-    float radar_rotation = 40;
-    float line_brightness = 500;
+    float radar_rotation = 18;
+    float line_brightness = 800;
     strokeWeight(2);
     
     for(int i = 0; i < radar_rotation; i++)
@@ -58,3 +64,4 @@ else {
 
   }
 } 
+  
