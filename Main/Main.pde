@@ -6,6 +6,7 @@ Cabin  c;
 Radar radar;
 Minim minim;
 AudioPlayer player;
+AudioPlayer alarmSound;
 Alarm alarm;
 
 
@@ -14,7 +15,7 @@ void setup() {
   size (800, 600);
   background (0);
   stroke(255);
-  noCursor();
+  //noCursor();
   minim = new Minim(this);
 
   s = new Space_field();
@@ -23,6 +24,7 @@ void setup() {
   alarm = new Alarm(width/1.3, height/1.2, 75, 0.5, 200);
 
   player = minim.loadFile("spaceship-atmosphere.wav");
+  alarmSound = minim.loadFile("alarm.mp3");
 }
 void draw () {
 
