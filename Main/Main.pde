@@ -1,11 +1,11 @@
-import processing.sound.*;
-
+import ddf.minim.*;
 
 
 Space_field s;
 Cabin  c;
 Radar radar;
-
+Minim minim;
+AudioPlayer player;
 
 
 void setup() {
@@ -14,10 +14,13 @@ void setup() {
     background (0);
     stroke(255);
     noCursor();
+    minim = new Minim(this);
     
     s = new Space_field();
     c = new Cabin();
     radar = new Radar(width/2, height/1.16, 75, 0.5 , 200);
+    
+    player = minim.loadFile("spaceship-atmosphere.wav");
 }
 void draw () {
   
@@ -35,6 +38,26 @@ void draw () {
      radar.display_Radar();
      radar.movement();
      
+}
+
+
     
-     
+
+void keyPressed()
+{
+  if ( player.isPlaying() )
+  {
+    player.pause();
+  }
+  // if the player is at the end of the file,
+  // we have to rewind it before telling it to play again
+  else if ( player.position() == player.length() )
+  {
+    player.rewind();
+    player.play();
+  }
+  else
+  {
+    player.play();
+  }
 }
