@@ -33,9 +33,9 @@ class Alarm {
     ellipse(position_x, position_y, radius*0.8, radius*0.8);
     
       fill(255);
-      text("ALARM", 565, 516);
-      noFill();
-      rect(560, 500, 50, 30);
+      text("ALARM", 500, 535);
+      
+      
     
 if (mousePressed == true) {
     float radar_rotation = 18;

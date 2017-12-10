@@ -1,6 +1,6 @@
 class Clock {
 
-  int cx, cy;
+  float cx, cy;
   float secondsRadius;
   float minutesRadius;
   float hoursRadius;
@@ -9,14 +9,14 @@ class Clock {
 
   void time() {
 
-    int radius = min(width, height) / 11;
+    int radius = min(width, height) / 13;
     secondsRadius = radius * 0.72;
     minutesRadius = radius * 0.60;
     hoursRadius = radius * 0.50;
     clockDiameter = radius * 1.8;
 
-    cx = width / 2;
-    cy = height / 2;
+    cx = width / 1.2;
+    cy = height / 1.1;
   }
 
 
@@ -24,8 +24,8 @@ class Clock {
 
 
     // Draw the clock background
-    fill(255);
-    noStroke();
+    fill(0);
+    stroke(0);
     ellipse(cx, cy, clockDiameter, clockDiameter);
 
     // Angles for sin() and cos() start at 3 o'clock;
@@ -35,7 +35,7 @@ class Clock {
     float h = map(hour() + norm(minute(), 0, 60), 0, 24, 0, TWO_PI * 2) - HALF_PI;
 
     // Draw the hands of the clock
-    stroke(0);
+    stroke(0,255,0);
     strokeWeight(1);
     line(cx, cy, cx + cos(s) * secondsRadius, cy + sin(s) * secondsRadius);
     strokeWeight(2);

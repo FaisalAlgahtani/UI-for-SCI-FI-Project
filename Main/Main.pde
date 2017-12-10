@@ -43,14 +43,12 @@ void draw () {
   ellipse(mouseX, mouseY, 15, 15);
   ellipse(mouseX, mouseY, 5, 5);
 
+  
 
   s.looping();
   c.draw_cabin();
   radar.display_Radar();
   radar.movement();
-  //alarm.botton();
-  //alarm.mousePressed();
-  
    alarm.movement1();
     alarm.display_Alarm();
   clock.draw_clock();
