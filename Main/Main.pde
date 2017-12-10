@@ -30,6 +30,7 @@ void draw () {
 
   background (0);
   noFill();
+  strokeWeight(2);
   stroke(17, 255, 41);
   ellipseMode(CENTER);
   ellipse(mouseX, mouseY, 50, 50); 

@@ -26,7 +26,7 @@ class Alarm {
   
   void display_Alarm()
   {
-    strokeWeight(1.5);
+    strokeWeight(3);
     stroke(0);
     fill(255,0,0);
     ellipse(position_x, position_y, radius*0.8, radius*0.8);
