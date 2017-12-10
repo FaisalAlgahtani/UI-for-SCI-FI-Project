@@ -6,42 +6,47 @@ Cabin  c;
 Radar radar;
 Minim minim;
 AudioPlayer player;
+Alarm alarm;
 
 
 void setup() {
 
-    size (800, 600);
-    background (0);
-    stroke(255);
-    noCursor();
-    minim = new Minim(this);
-    
-    s = new Space_field();
-    c = new Cabin();
-    radar = new Radar(width/2, height/1.16, 75, 0.5 , 200);
-    
-    player = minim.loadFile("spaceship-atmosphere.wav");
+  size (800, 600);
+  background (0);
+  stroke(255);
+  noCursor();
+  minim = new Minim(this);
+
+  s = new Space_field();
+  c = new Cabin();
+  radar = new Radar(width/2, height/1.16, 75, 0.5, 200);
+  alarm = new Alarm(width/1.2, height/1.1, 75, 0.5, 200);
+
+  player = minim.loadFile("spaceship-atmosphere.wav");
 }
 void draw () {
-  
-    background (0);
-    noFill();
-    stroke(17,255, 41);
-    ellipseMode(CENTER);
-    ellipse(mouseX, mouseY, 50, 50); 
-    ellipse(mouseX, mouseY, 15, 15);
-    ellipse(mouseX, mouseY, 5, 5);
 
-  
-     s.looping();
-     c.draw_cabin();
-     radar.display_Radar();
-     radar.movement();
-     
+  background (0);
+  noFill();
+  stroke(17, 255, 41);
+  ellipseMode(CENTER);
+  ellipse(mouseX, mouseY, 50, 50); 
+  ellipse(mouseX, mouseY, 15, 15);
+  ellipse(mouseX, mouseY, 5, 5);
+
+
+  s.looping();
+  c.draw_cabin();
+  radar.display_Radar();
+  radar.movement();
+  //alarm.botton();
+  //alarm.mousePressed();
+  alarm.movement1();
+  alarm.display_Alarm();
 }
 
 
-    
+
 
 void keyPressed()
 {
@@ -53,10 +58,9 @@ void keyPressed()
   // we have to rewind it before telling it to play again
   else if ( player.position() == player.length() )
   {
-    player.rewind();
+    player.loop();
     player.play();
-  }
-  else
+  } else
   {
     player.play();
   }
