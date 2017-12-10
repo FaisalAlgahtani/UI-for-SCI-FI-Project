@@ -20,7 +20,7 @@ void setup() {
   s = new Space_field();
   c = new Cabin();
   radar = new Radar(width/2, height/1.16, 75, 0.5, 200);
-  alarm = new Alarm(width/1.2, height/1.1, 75, 0.5, 200);
+  alarm = new Alarm(width/1.3, height/1.2, 75, 0.5, 200);
 
   player = minim.loadFile("spaceship-atmosphere.wav");
 }
