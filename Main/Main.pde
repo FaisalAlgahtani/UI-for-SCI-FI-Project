@@ -23,7 +23,7 @@ void setup() {
   radar = new Radar(width/2, height/1.16, 75, 0.5, 200);
   alarm = new Alarm(width/1.3, height/1.2, 75, 0.5, 200);
 
-  player = minim.loadFile("spaceship-atmosphere.wav");
+  player = minim.loadFile("outer-space-air.wav");
   alarmSound = minim.loadFile("alarm.mp3");
 }
 void draw () {
@@ -46,4 +46,6 @@ void draw () {
   alarm.movement1();
   alarm.display_Alarm();
   player.play();
+  //player.rewind();
+
 }
