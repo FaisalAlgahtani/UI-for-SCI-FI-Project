@@ -35,12 +35,14 @@ class Clock {
     float h = map(hour() + norm(minute(), 0, 60), 0, 24, 0, TWO_PI * 2) - HALF_PI;
 
     // Draw the hands of the clock
-    stroke(0,255,0);
+    stroke(255,0,0);
     strokeWeight(1);
     line(cx, cy, cx + cos(s) * secondsRadius, cy + sin(s) * secondsRadius);
     strokeWeight(2);
+    stroke(0,255,0);
     line(cx, cy, cx + cos(m) * minutesRadius, cy + sin(m) * minutesRadius);
     strokeWeight(4);
+    stroke(0,255,0);
     line(cx, cy, cx + cos(h) * hoursRadius, cy + sin(h) * hoursRadius);
 
     // Draw the minute ticks
