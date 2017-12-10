@@ -45,25 +45,5 @@ void draw () {
   //alarm.mousePressed();
   alarm.movement1();
   alarm.display_Alarm();
-}
-
-
-
-
-void keyPressed()
-{
-  if ( player.isPlaying() )
-  {
-    player.pause();
-  }
-  // if the player is at the end of the file,
-  // we have to rewind it before telling it to play again
-  else if ( player.position() == player.length() )
-  {
-    player.loop();
-    player.play();
-  } else
-  {
-    player.play();
-  }
+  player.play();
 }
