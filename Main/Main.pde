@@ -1,3 +1,5 @@
+
+
 import ddf.minim.*;
 
 
@@ -24,7 +26,7 @@ void setup() {
   radar = new Radar(width/2, height/1.16, 75, 0.5, 200);
   alarm = new Alarm(width/1.53, height/1.25, 75, 0.5, 200);
   clock = new Clock();
-  player = minim.loadFile("outer-space-air.wav");
+  player = minim.loadFile("Space.mp3");
   alarmSound = minim.loadFile("alarm.mp3");
   
   
