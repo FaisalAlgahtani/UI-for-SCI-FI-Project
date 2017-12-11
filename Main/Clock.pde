@@ -1,3 +1,4 @@
+// Starting class
 class Clock {
 
   float cx, cy;
@@ -6,7 +7,7 @@ class Clock {
   float hoursRadius;
   float clockDiameter;
 
-
+  
   void time() {
 
     int radius = min(width, height) / 13;

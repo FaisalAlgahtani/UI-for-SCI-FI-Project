@@ -1,3 +1,4 @@
+// Starting class
 class Alarm {
 
 
@@ -20,11 +21,13 @@ class Alarm {
     this.Color = Color;
   }
 
+// define function
   void movement1()
   {
     angle = angle + speeding;
   }
   
+  // define function
   void display_Alarm()
   {
     strokeWeight(3);
@@ -32,7 +35,7 @@ class Alarm {
     fill(255,0,0);
     ellipse(position_x, position_y, radius*0.8, radius*0.8);
      
-    
+ // when the mouse pressed it will display line rotating and alarm sound   
 if (mousePressed == true) {
     float radar_rotation = 18;
     float line_brightness = 800;
@@ -44,21 +47,16 @@ if (mousePressed == true) {
       float x = position_x + sin(angle - i * speeding) * radius/2.7;
       float y = position_y - cos(angle - i * speeding) * radius/2.7;
       line(position_x, position_y, x, y);
-      
+      // play alarm sound
       alarmSound.play();
-        
-     
-      //alarmSound.loop();
+    
     }
-    
-    
+ 
 } 
 else {
      alarmSound.pause();
     fill(255,0,0);
-  }
-
-
+      }
 
   }
 } 

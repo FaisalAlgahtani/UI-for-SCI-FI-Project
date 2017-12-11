@@ -1,3 +1,4 @@
+// Starting class
 class Radar
 {
   float position_x;

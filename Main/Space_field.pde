@@ -1,3 +1,4 @@
+// Starting class
 class Space_field {
 
   float [] x = new float [250];

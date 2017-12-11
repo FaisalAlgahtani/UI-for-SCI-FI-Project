@@ -1,20 +1,21 @@
+// Starting class
 class Cabin {
 
-  float x;
-  float y;
-
+  // define function
   void draw_cabin() {
-
+    
+    // draw the cabin
     stroke(160);
     fill(96);
     ellipse(400, 600, 800, 350);
     
-
+    // draw the box of bottons on the left side of the cabin board
     strokeWeight(6);
     stroke(192);
     fill(0);
     rect(120, 490, 120, 90, 10);
-
+    
+    // the buttons with diffrent color
     noStroke();
     fill(0, 102, 51);
     rect(135, 500, 15, 10);
@@ -44,7 +45,7 @@ class Cabin {
     rect(210, 550, 15, 10);
     
     
-    
+    // second box with to circles buttons 
     strokeWeight(3);
     stroke(90);
     fill(170);
@@ -55,6 +56,8 @@ class Cabin {
     fill(255,255,0);
     ellipse(285, 555, 30, 30);
     
+    
+    // small rectangle with some buttons on the right side
     fill(180);
     rect(490, 530, 100,40);
     
@@ -71,14 +74,6 @@ class Cabin {
     ellipse(540, 558, 15, 15);
     fill(0,153, 76);
     ellipse(570, 558, 15, 15);
-    
-    
-
-    
-  
-   
-    
-    
     
       
   }
