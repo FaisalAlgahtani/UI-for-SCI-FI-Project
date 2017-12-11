@@ -4,7 +4,7 @@ Object Oriented programming assignments useing Processing to create a UI for a s
 
 * Student Name: Faisal Algahtani
 
-* Student ID:  D15125895
+* Student number: D15125895
 
 * course: computer science 
 
