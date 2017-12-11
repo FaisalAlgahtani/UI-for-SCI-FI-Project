@@ -8,6 +8,7 @@ class Cabin {
     stroke(160);
     fill(96);
     ellipse(400, 600, 800, 350);
+    
 
     strokeWeight(6);
     stroke(192);
@@ -42,23 +43,22 @@ class Cabin {
     fill(0, 102, 51);
     rect(210, 550, 15, 10);
     
-     strokeWeight(1);
-    stroke(0);
-    fill(150);
-    rect(254, 480, 60, 15);
     
-    strokeWeight(1);
-    stroke(0);
-    fill(0);
-    rect(254, 500, 70, 80);
     
-    fill(255);
-    textSize(20);
-    text("1", 270, 540); 
+    strokeWeight(3);
+    stroke(90);
+    fill(160);
+    rect(254, 490, 60, 90);
     
-    stroke(0,0,255);
-    noFill();
-    rect(260, 520, 30, 28);
+   // strokeWeight(3);
+    //stroke(170);
+    fill(0,255,0);
+    ellipse(285, 515, 30, 30);
+    fill(255,255,0);
+    ellipse(285, 555, 30, 30);
+
+    
+  
    
     
     

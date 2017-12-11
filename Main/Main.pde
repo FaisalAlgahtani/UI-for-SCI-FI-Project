@@ -9,7 +9,7 @@ AudioPlayer player;
 AudioPlayer alarmSound;
 Alarm alarm;
 Clock clock;
-
+ 
 
 void setup() {
 
@@ -50,10 +50,10 @@ void draw () {
   radar.display_Radar();
   radar.movement();
    alarm.movement1();
-    alarm.display_Alarm();
+   alarm.display_Alarm();
   clock.draw_clock();
   clock.time();
- 
+   
  
   player.play();
   //player.rewind();

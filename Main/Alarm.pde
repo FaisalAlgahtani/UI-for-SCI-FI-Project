@@ -33,7 +33,7 @@ class Alarm {
     ellipse(position_x, position_y, radius*0.8, radius*0.8);
     
       fill(255);
-      text("ALARM", 500, 535);
+      text("ALARM", 490, 535);
       
       
     
@@ -50,6 +50,8 @@ if (mousePressed == true) {
       line(position_x, position_y, x, y);
       
       alarmSound.play();
+        
+     
       //alarmSound.loop();
     }
     
