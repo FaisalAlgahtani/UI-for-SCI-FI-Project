@@ -47,15 +47,32 @@ class Cabin {
     
     strokeWeight(3);
     stroke(90);
-    fill(160);
-    rect(254, 490, 60, 90);
+    fill(170);
+    rect(254, 480, 60, 100);
     
-   // strokeWeight(3);
-    //stroke(170);
     fill(0,255,0);
-    ellipse(285, 515, 30, 30);
+    ellipse(285, 510, 30, 30);
     fill(255,255,0);
     ellipse(285, 555, 30, 30);
+    
+    fill(180);
+    rect(490, 530, 100,40);
+    
+    strokeWeight(2);
+    stroke(160);
+    fill(20);
+    rect(500, 535, 80,10);
+    fill(255,0,0);
+     
+    strokeWeight(1);   
+    stroke(0);
+    ellipse(510, 558, 15, 15);
+    fill(0,0, 255);
+    ellipse(540, 558, 15, 15);
+    fill(0,153, 76);
+    ellipse(570, 558, 15, 15);
+    
+    
 
     
   
