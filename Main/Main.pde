@@ -1,3 +1,10 @@
+/**
+  Student name: Faisal Algahtani
+  ID: D15125895
+  
+*/
+
+
 // adding minim library
 import ddf.minim.*;
 
