@@ -12,7 +12,7 @@ AudioPlayer player;
 AudioPlayer alarmSound;
 Alarm alarm;
 Clock clock;
- 
+Images image;
 
 void setup() {
 
@@ -29,8 +29,7 @@ void setup() {
   clock = new Clock();
   player = minim.loadFile("Space.mp3");
   alarmSound = minim.loadFile("alarm.mp3");
-  
-  
+  image = new Images();  
     sata = loadImage("Satellite.png");
     earth = loadImage("Earth.png");
   
@@ -46,12 +45,6 @@ void draw () {
   ellipse(mouseX, mouseY, 15, 15);
   ellipse(mouseX, mouseY, 5, 5);
 
-  image(sata, 360,50, 100, 60);
-  image(earth,460,50, 300, 260);
-
-
-
-
   s.looping();
   c.draw_cabin();
   radar.display_Radar();
@@ -60,7 +53,7 @@ void draw () {
    alarm.display_Alarm();
   clock.draw_clock();
   clock.time();
-   
+  image.display(); 
  
   player.play();
   //player.rewind();
