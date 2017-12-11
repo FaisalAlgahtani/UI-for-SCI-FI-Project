@@ -2,7 +2,8 @@
 
 import ddf.minim.*;
 
-
+PImage sata;
+PImage earth;
 Space_field s;
 Cabin  c;
 Radar radar;
@@ -30,8 +31,8 @@ void setup() {
   alarmSound = minim.loadFile("alarm.mp3");
   
   
-   
-  
+    sata = loadImage("Satellite.png");
+    earth = loadImage("Earth.png");
   
 }
 void draw () {
@@ -45,7 +46,11 @@ void draw () {
   ellipse(mouseX, mouseY, 15, 15);
   ellipse(mouseX, mouseY, 5, 5);
 
-  
+  image(sata, 360,50, 100, 60);
+  image(earth,460,50, 300, 260);
+
+
+
 
   s.looping();
   c.draw_cabin();
